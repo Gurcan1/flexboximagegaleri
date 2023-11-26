@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            font-size: 20px;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            
+        }
+        .column{
+            flex: 25%;
+            max-width: 20%;
+           
+
+        }
+        .column img{
+            width: 100%;
+            margin-top: 8px;
+            
+        }
+        @media screen and (max-width:800px){
+            .column{
+                flex: 50%;
+                max-width: 40%;
+                
+            }
+
+        }
+        @media screen and (max-width:600px){
+            .column{
+                flex: 100%;
+                max-width: 90%;
+                
+            }
+
+        }
+       
+            
+            
+        
+    </style>
+      
+</head>
+<body>
+    <div class="header">
+        <h1>Flexbox İle İmage Galeri</h1>
+        <p>Flex Box'ın gücünü görün !</p>
+    
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="39-400x600.jpg" alt="">
+            <img src="42-400x600.jpg" alt="">
+            <img src="91-400x600.jpg" alt="">
+            <img src="102-400x600.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="267-400x600.jpg" alt="">
+            <img src="270-400x600.jpg" alt="">
+            <img src="329-400x600.jpg" alt="">
+            <img src="566-400x600.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="583-400x600.jpg" alt="">
+            <img src="683-400x600.jpg" alt="">
+            <img src="721-400x600.jpg" alt="">
+            <img src="840-400x600.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="877-400x600.jpg" alt="">
+            <img src="925-400x600.jpg" alt="">
+            <img src="1009-400x600.jpg" alt="">
+            <img src="1048-400x600.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
